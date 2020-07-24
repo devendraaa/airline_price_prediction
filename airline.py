@@ -10,7 +10,7 @@ from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationE
 from flaskapp.models import User
 
 app = Flask(__name__)
-model = pickle.load(open("C:/Users/DEVENDRA/Desktop/flight_rf.pkl", "rb"))
+model = pickle.load(open("flight_rf.pkl", "rb"))
 
 
 @app.route("/")
